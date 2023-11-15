@@ -1,13 +1,21 @@
-*,*::after,::before {
-    font-family:'itc agg',serif;
+
+@font-face{
+    font-family:'itcagg4';
+    src:url("./fonts/36EC2D_4_0.woff2") format('woff2');
+    font-style:normal;
+    font-display: swap;
 }
 
 @font-face{
-    font-family:'itc agg',serif;
-    src:("styles/fonts/fa-brands-400.woff2");
+    font-family:'itcagg2';
+    src:url("./fonts/36EC2D_2_0.woff2") format('woff2');
     font-style:normal;
-    font-weight:400;
+    font-display: swap;
+}
 
+*,*::after,*::before {
+    font-family:'itcagg', sans-serif;
+    font-weight: 300;
 }
 
 body{
