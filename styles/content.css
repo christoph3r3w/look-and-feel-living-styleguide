@@ -18,9 +18,166 @@
     font-weight: 300;
 }
 
+:root{
+    /* colors */
+    --cp-blue:#0a3250;
+    --cp-green:#46aa64;
+    --cp-white:#ffffff;
+    --cp-grey:#dfe4e5;
+    --cp-lightgreen:#c8e5d0;
+    --beige:#F5E7E0;
+    --beige2:#c7b79eac;
+    /* padding body */
+    --pb:.4fr;
+    /* varriable gap */
+    --vg-n:1.4rem;
+    --vg-s:calc(var(--vg-n)/2)
+
+}
+
 body{
-    
-    
+       
+}
+
+.banner{
+
+}
+
+.components-grid{
+   
+}
+
+.intro{
+
+    >h1{
+        font-family:'itcagg4';
+    }
+}
+
+.list{
+    font-family:'itcagg4';
+
+}
+
+.container-components{
+
+}
+.components{
+    color: var(--cp-green);
+
+}
 
 
+
+#Typography > .components .headings{
+   --min:min-content;
+   --max:calc(var(--min) - 2rem);
+    
+    
+    /* padding: 2px; */
+    
+    text-align: center;
+    
+
+    :nth-child(n){
+       
+        
+    }
+    :nth-child(1){
+    /* outline: solid; */
+    background-color: var(--cp-grey);
+    font-size: 2.8rem;
+    font-family:'itcagg4';
+    max-width:15rem ;
+    }
+    :nth-child(2){
+    color: var(--cp-blue);
+    font-size: 2.8rem;
+    font-family:'itcagg4';
+    max-width:15rem ;
+    }
+    :nth-child(3){
+    background-color: var(--cp-blue);
+    color: var(--cp-white);
+    font-size: 2.8rem;
+    font-family:'itcagg2';
+    max-width:15rem ;
+    
+    }
+    :nth-child(4){
+    background-color: var(--cp-lightgreen);
+    color: var(--cp-blue);
+    font-size: 2.8rem;
+    font-family:'itcagg4';
+    max-width:15rem ;
+    }
+    :nth-child(5){
+    background-color: var(--beige2);
+    color: black;
+    font-size: 2.8rem;
+    font-family:'itcagg2';
+    max-width:15rem ;
+    }
+}
+#Typography > .components .t-elements{
+   --fz-n:1rem;
+    
+    padding: 2px;
+    
+    :nth-child(1){
+    /* outline: solid red; */
+    /* background-color: var(--cp-grey); */
+    font-size: var(--fz-n);
+    font-family:'itcagg2';
+    }
+    :nth-child(2){
+    color: var(--cp-blue);
+    font-size: var(--fz-n);
+    font-family:'itcagg2';
+    }
+    :nth-child(3){
+    /* background-color: var(--cp-blue); */
+    /* color: var(--cp-white); */
+    font-size: var(--fz-n);
+    font-family:'itcagg2';
+    
+    }
+    :nth-child(4){
+    /* background-color: var(--cp-lightgreen); */
+    color: var(--cp-blue);
+    font-size: var(--fz-n);
+    font-family:'itcagg2';
+    }
+    :nth-child(5){
+    /* background-color: var(--beige2); */
+    color: black;
+    font-size: var(--fz-n);
+    font-family:'itcagg2';
+    }
+}
+#Typography > .components .t-font{
+   --fz-n:1rem;
+    text-transform: uppercase;
+    padding: 2px;
+    line-height: 1.5;
+    
+    :nth-child(1){
+    background-color: var(--cp-white);
+    font-size: calc(var(--fz-n) * 1.5);
+    font-family:'itcagg';
+    }
+    :nth-child(2){
+        background-color: var(--cp-white);
+        color: var(--cp-blue);
+        font-size: calc(var(--fz-n) * 1.3);
+        font-family:'itcagg2';
+    }
+    :nth-child(3){
+    /* background-color: var(--cp-blue); */
+    /* color: var(--cp-white); */
+    font-size: var(--fz-n);
+    font-family:'itcagg2';
+    
+    }
+    
 }
