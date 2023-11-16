@@ -88,11 +88,12 @@ header{
             
         }
         >:nth-child(2){
-            background-color: var(--cp-green);
+            /* background-color: var(--cp-green); */
             position: absolute;
-            right: var(--vg-n);
-            top: 70px;
-            color: var(--cp-lightgreen);
+            right: 50px;
+            top: 50px;
+            color: var(--cp-green);
+            scale:1.5
         }
     }
 }
@@ -181,13 +182,29 @@ header{
             color:var(--cp-blue);
             width: inherit;
             /* outline: solid; */
+            text-align: center;
         }
+
+        >svg{
+            /* color:var(--cp-green); */
+            padding-top: 5px;
+            translate: 0 4px;
+        }
+
+        
+
        
     }
     & li a:hover{
-        box-shadow: 0 6px 1px 0 var(--border-color-n);
+        box-shadow: 0 3px 1px 0 var(--border-color-n);
     }
+    
 }
+
+.list li:nth-of-type(5) svg {
+    color:transparent;
+}
+
 
 .container-components{
     grid-column:compo-start/side-end;
