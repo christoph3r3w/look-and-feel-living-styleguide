@@ -68,7 +68,7 @@ body{
 }
 
 
-
+/* typography section */
 #Typography > .components .headings{
    --min:min-content;
    --max:calc(var(--min) - 2rem);
@@ -180,4 +180,31 @@ body{
     
     }
     
+}
+
+
+/* images and media section */
+#images-media{}
+
+/* buttons section */
+#buttons li:nth-of-type(n) button{
+    /* outline: solid orange; */
+    width: 100%;
+    height: 2em;
+}
+
+#buttons{
+    > .components ul{
+        font-family:'itcagg2';
+
+    & > li:nth-of-type(1) button{
+        background-color: var(--cp-blue);
+        color: var(--cp-white);
+        font-size: 2em;
+        
+        &:hover{
+            background-color: rgb(4, 9, 42);
+        }
+    }
+    }
 }
