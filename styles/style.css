@@ -136,7 +136,8 @@ header{
 
     margin: 1em;
     margin-bottom: 15vh;
-    padding: var(--vg-n) 0px;
+    padding: 2rem 0px;
+
 
     text-align: start;
     text-transform: capitalize;
