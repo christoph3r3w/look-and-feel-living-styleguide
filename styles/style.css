@@ -313,7 +313,24 @@ header{
 
 
 
-#images-media{}
+#images-media{
+    > .components{
+        height: 65vh;
+        /* overflow-y: scroll;   */
+    }
+    > .components ul{
+        display: grid;
+        grid-template-columns: [border-start] minmax(0px,.3fr) [button-start] 1fr [mid] 1fr [button-end] minmax(0px,.3fr) [border-end]  ;
+        grid-template-rows: auto;
+        gap: var(--vg-n);
+        /* background-color: #46aa64; */
+
+        > li{
+            grid-column: button;
+        }
+    }
+
+}
 
 #buttons{
     /* height: fit-content; */
@@ -334,3 +351,22 @@ header{
     }
 
 }
+
+#navigation{
+    /* outline: solid aquamarine; */
+    /* background-color: var(--cp-green); */
+  >  .components ul{
+    display: grid;
+    grid-template-columns: [border-start] minmax(0px,.3fr) [button-start] 1fr [mid] 1fr [button-end] minmax(0px,.3fr) [border-end]  ;
+    grid-template-rows: auto;
+
+    }
+  >  .components ul{
+
+    > li{
+        grid-column: button;
+    }
+    }
+}
+
+
