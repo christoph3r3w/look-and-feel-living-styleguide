@@ -11,7 +11,7 @@
 
 .components-grid{
     display:grid;
-    grid-template-columns: [full-start] minmax(var(--vg-n),var(--pb)) [side-start] minmax(min-content,var(--pb)) [compo-start] 1fr [compo-end] .5fr [side-end] minmax(var(--vg-n),var(--pb)) [full-end] ;
+    grid-template-columns: [full-start] minmax(var(--vg-n),var(--pb)) [side-start] minmax(min-content,var(--pb)) [compo-start] 1fr [compo-end] .8fr [side-end] minmax(var(--vg-n),var(--pb)) [full-end] ;
     gap: 0;
 }
 
@@ -203,9 +203,6 @@ header{
     
 }
 
-.list li:nth-of-type(5) svg {
-    color:transparent;
-}
 
 
 .container-components{
@@ -219,7 +216,7 @@ header{
     >.block{
        display: grid; 
        grid-template-columns: subgrid;
-       grid-template-rows: .4fr 2fr ;
+       grid-template-rows: auto 2fr ;
        grid-column:compo-start/side-end;
        border-bottom: solid var(--border-color-n);
        padding-bottom: var(--vg-n);
@@ -234,6 +231,7 @@ header{
         >h2{
             text-transform: capitalize;
             padding: 0px 8px;  
+            margin-bottom:var(--vg-n) ;
             
         }
 
@@ -261,14 +259,14 @@ header{
 }
 .compo-text{
     grid-column:compo-end/side-end;
-    /* display: grid; */
+    display: grid;
     grid-template-columns: subgrid;
-    /* grid-template-rows: 1fr 1fr 1fr; */
+    
+    /* grid-template-rows: auto; */
+    /* grid-template-columns: 1fr 1fr; */
     border-left: 1px solid #9aafa175;
     padding-left: var(--vg-s);
 
-
-   
     >article:nth-of-type(1){
         grid-row:1/2
     }
@@ -278,6 +276,25 @@ header{
     >article:nth-of-type(3){
         grid-row:3/4
     }
+    >article:nth-of-type(4){
+        grid-row:4/5
+    }
+   
+   
+   
+
+}
+#Typography .compo-text{
+    grid-column:compo-end/side-end;
+    display: grid;
+    grid-template-columns: subgrid;
+    /* grid-template-columns: 1fr 1fr; */
+    border-left: 1px solid #9aafa175;
+    padding-left: var(--vg-s);
+
+
+   
+    
 
 }
 
@@ -314,6 +331,8 @@ header{
 
 
 #images-media{
+    
+
     > .components{
         height: 65vh;
         /* overflow-y: scroll;   */
@@ -328,6 +347,10 @@ header{
         > li{
             grid-column: button;
         }
+    }
+    > .compo-text{
+        height: min-content;
+        /* overflow-y: scroll;   */
     }
 
 }

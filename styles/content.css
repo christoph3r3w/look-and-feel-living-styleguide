@@ -67,7 +67,7 @@ body{
 }
 
 .container-components{
-
+/* stuff */
 }
 .components{
     color: var(--cp-green);
@@ -76,13 +76,12 @@ body{
 
 
 /* typography section */
+#Typography > .compo-text {
+
+}
+
 #Typography > .components .headings{
-   --min:min-content;
-   --max:calc(var(--min) - 2rem);
-    
-    
-    /* padding: 2px; */
-    
+       
     text-align: center;
     
 
@@ -121,7 +120,8 @@ body{
     
 }
 #Typography > .components .t-elements{
-   --fz-n:1rem;
+   /* font size */
+    --fs-n:1rem;
     
     padding: 2px;
     
@@ -357,10 +357,10 @@ body{
 }
 
 
-/* navigations section*/
+/* Navigations section*/
 #navigation .components {
     font-family:'itcagg2';
-
+    /* search */
     & > article .search{
         outline:solid #0a3250;
         display: inline-flex;
@@ -391,6 +391,7 @@ body{
         /* background-color: var(--cp-green); */
         padding: var(--vg-n);
     }
+    /* Input date time */
     & > article .date-time-input{
         /* outline:solid orangered; */
         box-shadow: 0 0 0px 10px var(--cp-green) ;
@@ -451,14 +452,15 @@ body{
         /* width: min-content; */
     }
 
+    /* Tabs */
     & > article .tabs{
-        display: inline-flex;
+        display: flex;
         gap: var(--vg-s);
         
         /* margin: var(--vg-n); */
         color: var(--cp-white);
         justify-content: space-evenly;
-        width: min-content;
+        width: auto;
         
         >label:nth-of-type(n){
             display: flex;
