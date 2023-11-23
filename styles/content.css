@@ -20,15 +20,14 @@
 
 :root{
     /* colors */
-    --cp-blue:#0a3250;
-    --cp-blue-hover:#061e30;
-    --cp-green:#46aa64;
-    --cp-green-hover:#2a5f3a;
+    --cp-primary:#0a3250;
+    --cp-primary-hover:#061e30;
+    --cp-secondary:#46aa64;
+    --cp-secondary-hover:#2a5f3a;
     --cp-white:#ffffff;
     --cp-grey:#dfe4e5;
-    --cp-lightgreen:#c8e5d0;
-    --beige:#F5E7E0;
-    --beige2:#c7b79eac;
+    --cp-Tertiary:#c8e5d0;
+   
     /* padding body */
     --pb:.4fr;
     /* varriable gap */
@@ -38,13 +37,11 @@
      --g-c:1.5em;
      /* minimal curve */
      --m-c:4px;
+
      --margin-s: 1rem;
 
 }
 
-body{
-       
-}
 
 .banner{
 
@@ -58,6 +55,7 @@ body{
 
     >h1{
         font-family:'itcagg4';
+        color: var(--cp-primary);
     }
 }
 
@@ -70,25 +68,22 @@ body{
 /* stuff */
 }
 .components{
-    color: var(--cp-green);
+    color: var(--cp-secondary);
 
+}
+.compo-text strong {
+color: var(--cp-secondary);
 }
 
 
 /* typography section */
-#Typography > .compo-text {
-
-}
 
 #Typography > .components .headings{
        
     text-align: center;
     
 
-    :nth-child(n){
-       
-        
-    }
+
     :nth-child(1){
     /* outline: solid; */
     background-color: var(--cp-grey);
@@ -97,13 +92,13 @@ body{
     max-width:15rem ;
     }
     :nth-child(2){
-    color: var(--cp-blue);
+    color: var(--cp-primary);
     font-size: 2.8rem;
     font-family:'itcagg4';
     max-width:15rem ;
     }
     :nth-child(3){
-    background-color: var(--cp-blue);
+    background-color: var(--cp-primary);
     color: var(--cp-white);
     font-size: 2.8rem;
     font-family:'itcagg2';
@@ -111,8 +106,8 @@ body{
     
     }
     :nth-child(4){
-    background-color: var(--cp-lightgreen);
-    color: var(--cp-blue);
+    background-color: var(--cp-Tertiary);
+    color: var(--cp-primary);
     font-size: 2.8rem;
     font-family:'itcagg4';
     max-width:15rem ;
@@ -132,20 +127,21 @@ body{
     font-family:'itcagg2';
     }
     :nth-child(2){
-    color: var(--cp-blue);
+    color: var(--cp-primary);
     font-size: var(--fz-n);
     font-family:'itcagg2';
     }
     :nth-child(3){
-    /* background-color: var(--cp-blue); */
+    /* background-color: var(--cp-primary); */
     /* color: var(--cp-white); */
     font-size: var(--fz-n);
     font-family:'itcagg2';
+     color: var(--);
     
     }
     :nth-child(4){
-    /* background-color: var(--cp-lightgreen); */
-    color: var(--cp-blue);
+    /* background-color: var(--cp-Tertiary); */
+    color: var(--cp-primary);
     font-size: var(--fz-n);
     font-family:'itcagg2';
     }
@@ -169,12 +165,12 @@ body{
     }
     :nth-child(2){
         background-color: var(--cp-white);
-        color: var(--cp-blue);
+        color: var(--cp-primary);
         font-size: calc(var(--fz-n) * 1.3);
         font-family:'itcagg2';
     }
     :nth-child(3){
-    /* background-color: var(--cp-blue); */
+    /* background-color: var(--cp-primary); */
     /* color: var(--cp-white); */
     font-size: var(--fz-n);
     font-family:'itcagg2';
@@ -185,9 +181,9 @@ body{
 
 
 /* images and media section */
-#images-media{
+/* #images-media{
 
-}
+} */
 
 
 /* buttons section */
@@ -206,12 +202,12 @@ body{
         font-family:'itcagg2';
 
         & > li:nth-of-type(1) button{
-            background-color: var(--cp-blue);
+            background-color: var(--cp-primary);
             color: var(--cp-white);
             font-size: 2em;
             
             &:hover{
-                background-color: var(--cp-blue-hover);
+                background-color: var(--cp-primary-hover);
                 box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.471);
             }
             &:active{
@@ -220,12 +216,12 @@ body{
         }
 
         & > li:nth-of-type(3) button{
-            background-color: var(--cp-green);
+            background-color: var(--cp-secondary);
             color: var(--cp-white);
             font-size: 2em;
             
             &:hover{
-                background-color: var(--cp-green-hover);
+                background-color: var(--cp-secondary-hover);
                 box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.471);
             }
             &:active{
@@ -235,14 +231,14 @@ body{
         }
         
         & > li:nth-of-type(2) button{
-            background-color: var(--cp-blue);
+            background-color: var(--cp-primary);
             color: var(--cp-white);
             font-size: .1rem;
             width: 3rem;
             height: 3rem;
             
             &:hover{
-                color:var(--cp-green);
+                color:var(--cp-secondary);
                 box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.471);
             }
             &:active{
@@ -253,14 +249,14 @@ body{
             grid-column: button-start/mid
         }
         & > li:nth-of-type(5) button{
-            background-color: var(--cp-lightgreen);
-            color: var(--cp-blue);
+            background-color: var(--cp-Tertiary);
+            color: var(--cp-primary);
             font-size: 2rem;
             width: 3rem;
             height: 3rem;
             
             &:hover{
-                color:var(--cp-green);
+                color:var(--cp-secondary);
                 box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.471);
             }
             &:active{
@@ -268,12 +264,12 @@ body{
             }
         }
         & > li:nth-of-type(4) button{
-            background-color: var(--cp-lightgreen);
+            background-color: var(--cp-Tertiary);
             color: var(--cp-white);
             font-size: 2em;
             
             &:hover{
-                background-color: var(--cp-green-hover);
+                background-color: var(--cp-secondary-hover);
                 box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.471);
             }
             &:active{
@@ -286,13 +282,13 @@ body{
         }
         & > li:nth-of-type(6) button{
             background-color: var(--cp-white);
-            color: var(--cp-green);
+            color: var(--cp-secondary);
             font-size: 2rem;
             width: 3rem;
             height: 3rem;
             
             &:hover{
-                color:var(--cp-blue);
+                color:var(--cp-primary);
                 box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.471);
             }
             &:active{
@@ -361,6 +357,11 @@ body{
 #navigation .components {
     font-family:'itcagg2';
     /* search */
+    & > article:nth-of-type(1){
+        background-color: var(--cp-primary);
+        padding: var(--vg-n);
+        margin: var(--vg-s);
+    }
     & > article .search{
         outline:solid #0a3250;
         display: inline-flex;
@@ -373,7 +374,7 @@ body{
         > button{
             all: unset;
             flex-basis: content;
-            background-color: var(--cp-green);
+            background-color: var(--cp-secondary);
             color: var(--cp-white);
             padding: 2px;
             display: grid;
@@ -388,19 +389,19 @@ body{
         }
     }
     & > article:nth-of-type(2){
-        /* background-color: var(--cp-green); */
+        /* background-color: var(--cp-secondary); */
         padding: var(--vg-n);
     }
     /* Input date time */
     & > article .date-time-input{
         /* outline:solid orangered; */
-        box-shadow: 0 0 0px 10px var(--cp-green) ;
-        background-color: var(--cp-green);
+        box-shadow: 0 0 0px 10px var(--cp-secondary) ;
+        background-color: var(--cp-secondary);
         display:flex;
         justify-content:space-around;
         width: 100%;
         gap:var(--vg-s);
-        color:var(--cp-blue);
+        color:var(--cp-primary);
         --height-input:3rem;
        
         >:nth-child(n){
@@ -446,21 +447,19 @@ body{
     }
     & > article:nth-of-type(3){
         margin: var(--vg-s);
-        background-color: var(--cp-green);
-       /* ask why this doesn't work */
-       /* everything disapears when width:mincontent */
-        /* width: min-content; */
+        padding: 2em;
+        background-color: var(--cp-secondary);
+       
     }
 
     /* Tabs */
     & > article .tabs{
         display: flex;
         gap: var(--vg-s);
-        
-        /* margin: var(--vg-n); */
         color: var(--cp-white);
         justify-content: space-evenly;
         width: auto;
+        
         
         >label:nth-of-type(n){
             display: flex;
