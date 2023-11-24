@@ -59,7 +59,7 @@ html{
 
 body{
     background-color: var(--cp-white);
-    width: 100%;
+    width: 100vw;
     position: relative;
 }
 
@@ -259,6 +259,7 @@ header{
 }
 .compo-text{
     grid-column:compo-end/side-end;
+    
     display: grid;
     grid-template-columns: subgrid;
     line-height: 1.4;
@@ -393,3 +394,25 @@ header{
 }
 
 
+@media (width < 1000px) {
+    
+
+    
+    .components{
+        grid-column: auto;
+    }
+    .list{
+        grid-column: compo;
+
+        & ul{
+            display: flex;
+            flex-direction: column;
+            position: static;
+            top: 20vh;
+        }
+
+    }
+    .banner{
+        width: 100vw;
+    }
+}
