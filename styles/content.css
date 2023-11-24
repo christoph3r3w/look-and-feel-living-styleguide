@@ -26,7 +26,7 @@
     --cp-secondary-hover:#2a5f3a;
     --cp-white:#ffffff;
     --cp-grey:#dfe4e5;
-    --cp-Tertiary:#c8e5d0;
+    --cp-tertairy:#c8e5d0;
    
     /* padding body */
     --pb:.4fr;
@@ -106,7 +106,7 @@ color: var(--cp-secondary);
     
     }
     :nth-child(4){
-    background-color: var(--cp-Tertiary);
+    background-color: var(--cp-tertairy);
     color: var(--cp-primary);
     font-size: 2.8rem;
     font-family:'itcagg4';
@@ -140,7 +140,7 @@ color: var(--cp-secondary);
     
     }
     :nth-child(4){
-    /* background-color: var(--cp-Tertiary); */
+    /* background-color: var(--cp-tertairy); */
     color: var(--cp-primary);
     font-size: var(--fz-n);
     font-family:'itcagg2';
@@ -249,7 +249,7 @@ color: var(--cp-secondary);
             grid-column: button-start/mid
         }
         & > li:nth-of-type(5) button{
-            background-color: var(--cp-Tertiary);
+            background-color: var(--cp-tertairy);
             color: var(--cp-primary);
             font-size: 2rem;
             width: 3rem;
@@ -264,7 +264,7 @@ color: var(--cp-secondary);
             }
         }
         & > li:nth-of-type(4) button{
-            background-color: var(--cp-Tertiary);
+            background-color: var(--cp-tertairy);
             color: var(--cp-white);
             font-size: 2em;
             

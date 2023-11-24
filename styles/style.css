@@ -33,11 +33,11 @@
 
 
 :root{
-    --cp-blue:#0a3250;
-    --cp-green:#46aa64;
+    --cp-primary:#0a3250;
+    --cp-secondary:#46aa64;
     --cp-white:#ffffff;
     --cp-grey:#dfe4e5;
-    --cp-lightgreen:#d4e9db;
+    --cp-tertairy:#d4e9db;
     /* padding body */
     --pb:.4fr;
     /* varriable gap */
@@ -72,9 +72,7 @@ header{
     >nav{
         width: 100%;
         display: grid;
-        
         position: relative;
-        
         height: 16vh;
         place-items: center;
 
@@ -88,11 +86,11 @@ header{
             
         }
         >:nth-child(2){
-            /* background-color: var(--cp-green); */
+            /* background-color: var(--cp-secondary); */
             position: absolute;
             right: 50px;
             top: 50px;
-            color: var(--cp-green);
+            color: var(--cp-secondary);
             scale:1.5
         }
     }
@@ -147,7 +145,7 @@ header{
     >h1{
        grid-column: side;
        font-size: 2.8rem; 
-       color: var(--cp-blue);
+       color: var(--cp-primary);
     }
 
     >p{
@@ -181,14 +179,14 @@ header{
         text-transform: capitalize;
 
         > a {
-            color:var(--cp-blue);
+            color:var(--cp-primary);
             width: inherit;
             /* outline: solid; */
             text-align: center;
         }
 
         >svg{
-            /* color:var(--cp-green); */
+            /* color:var(--cp-secondary); */
             padding-top: 5px;
             translate: 0 4px;
         }
@@ -378,7 +376,7 @@ header{
 
 #navigation{
     /* outline: solid aquamarine; */
-    /* background-color: var(--cp-green); */
+    /* background-color: var(--cp-secondary); */
   >  .components ul{
     display: grid;
     grid-template-columns: [border-start] minmax(0px,.3fr) [button-start] 1fr [mid] 1fr [button-end] minmax(0px,.3fr) [border-end]  ;
@@ -393,14 +391,14 @@ header{
     }
 }
 
+.code-reference{
+    background-color: var(--cp-tertairy);
+    margin: 0;
+    
+}
 
 @media (width < 1000px) {
     
-
-    
-    .components{
-        grid-column: auto;
-    }
     .list{
         grid-column: compo;
 
@@ -412,6 +410,16 @@ header{
         }
 
     }
+    .components{
+        grid-column: auto;
+    }
+
+    .block > div article:nth-last-of-type(n+2){
+            border-bottom: solid var(--cp-primary);
+            padding-bottom: var(--vg-s);
+           
+        }
+    
     .banner{
         width: 100vw;
     }
