@@ -160,7 +160,7 @@ header{
     grid-column-start:side-start ;
     grid-column-end:compo-start ;
     /* outline: solid; */
-    width: 100%;
+    width: 11rem;
     
     
     
@@ -230,6 +230,7 @@ header{
             text-transform: capitalize;
             padding: 0px 8px;  
             margin-bottom:var(--vg-n) ;
+            font-size: 2.5rem;
             
         }
 
@@ -316,7 +317,7 @@ header{
 
 #Typography > .components{
     height: 65vh;
-    overflow-y: scroll;  
+    /* overflow-y: scroll;   */
  }
 /* #Typography > .components::-webkit-scrollbar {
     display: none;
