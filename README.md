@@ -1,6 +1,6 @@
  [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# living Styleguide for the Marketplace website
+# living Styleguide De Hallen
 
 
 
