@@ -395,6 +395,8 @@ header{
 .code-reference{
     background-color: var(--cp-tertairy);
     margin: 0;
+    padding: var(--vg-s);
+    text-wrap:wrap ;
     
 }
 
@@ -409,7 +411,6 @@ header{
             position: static;
             top: 20vh;
         }
-
     }
     .components{
         grid-column: auto;
